@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatCoo", "ChatCoo\ChatCoo.csproj", "{E048E23F-25C7-4E26-8AAF-FD622102612F}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FrontEnd", "FrontEnd\FrontEnd.esproj", "{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{E048E23F-25C7-4E26-8AAF-FD622102612F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E048E23F-25C7-4E26-8AAF-FD622102612F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E048E23F-25C7-4E26-8AAF-FD622102612F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D511462B-AEF0-43D9-83EB-FF6A1E7EFBFD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

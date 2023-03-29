@@ -1,9 +1,12 @@
+﻿using ChatCoo;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -29,10 +32,20 @@ app.MapGet("/weatherforecast", () =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
+    Console.WriteLine("Test");
     return forecast;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+app.MapPost("/joke", (HttpContext context) =>
+{
+
+})
+.WithName("Test Joke")
+.WithOpenApi();
+
+app.MapHub<ChatHub>("/live-chat");
 
 app.Run();
 
